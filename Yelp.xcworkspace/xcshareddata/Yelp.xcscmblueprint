@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DBAE9057D3E213FA4DBDE05C11C15C91E02F2F9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DBAE9057D3E213FA4DBDE05C11C15C91E02F2F9F" : 0,
+    "0505E8BE14D13A4EF29FCC39FF94FAC69D87C80A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "970C67EE-003A-466C-B33F-28C7E31B290A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DBAE9057D3E213FA4DBDE05C11C15C91E02F2F9F" : "Yelp\/",
+    "0505E8BE14D13A4EF29FCC39FF94FAC69D87C80A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Yelp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Yelp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RealCaliforniaCheese\/Instagram.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0505E8BE14D13A4EF29FCC39FF94FAC69D87C80A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RealCaliforniaCheese\/Yelp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBAE9057D3E213FA4DBDE05C11C15C91E02F2F9F"
+    }
+  ]
+}

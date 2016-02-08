@@ -43,7 +43,6 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
         var filters = [String : AnyObject]()
         
         var selectedCategories = [String]()
-        // call delegate
         
         for (row,isSelected) in filterStates {
             if isSelected {
@@ -70,7 +69,7 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
 //        } else {
 //            cell.filterSwitch.on = false
 //        }
-        cell.filterSwitch.on = filterStates[indexPath.row] ?? false // if exist, else false
+        cell.filterSwitch.on = filterStates[indexPath.row] ?? false // if exist, else false (same as above)
         
         return cell
     }

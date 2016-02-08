@@ -33,7 +33,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         // you just need to set the titleView to be the search bar
         navigationItem.titleView = searchBar
 
-        Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
+        Business.searchWithTerm("Restaurants", completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.filteredBusinesses = businesses
             // Simulator blank screen = after data comes back, need tableView to update itself
             self.tableView.reloadData()
@@ -67,20 +67,20 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         searchBar.setShowsCancelButton (true, animated: true)
         
         if let searchText = searchBar.text {
-            filteredBusinesses = searchText.isEmpty ? businesses : businesses?.filter({(dataString:Business) -> Bool in dataString.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+            filteredBusinesses = searchText.isEmpty ? businesses : businesses?.filter({(business:Business) -> Bool in business.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
             });
         }
-        tableView.reloadData()
+        self.tableView.reloadData()
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
-        tableView.reloadData()
+        self.tableView.reloadData()
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         view.endEditing(true)
-        tableView.reloadData()
+        self.tableView.reloadData()
         searchBar.setShowsCancelButton(false, animated: true)
         searchBar.resignFirstResponder()
     }
