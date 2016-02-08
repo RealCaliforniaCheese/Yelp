@@ -3,7 +3,7 @@
 //  Yelp
 //
 //  Created by Che Chao Hsu on 2/6/16.
-//  Copyright © 2016 Timothy Lee. All rights reserved.
+//  Copyright © 2016 Che Chao Hsu. All rights reserved.
 //
 
 import UIKit

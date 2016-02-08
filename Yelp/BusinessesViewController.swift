@@ -2,8 +2,8 @@
 //  BusinessesViewController.swift
 //  Yelp
 //
-//  Created by Timothy Lee on 4/23/15.
-//  Copyright (c) 2015 Timothy Lee. All rights reserved.
+//  Created by Che Chao Hsu on 2/6/16.
+//  Copyright © 2016 Che Chao Hsu. All rights reserved.
 //
 
 import UIKit
@@ -75,7 +75,6 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
-        print("editing")
         tableView.reloadData()
     }
     
@@ -90,11 +89,9 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     // dataSource - how many rows and what views for each row
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if filteredBusinesses != nil {
-            print("filteredBusinesses!.count")
             return filteredBusinesses!.count
         }
         else {
-            print("filtered business nil")
             return 0
         }
     }
